@@ -122,3 +122,41 @@ header {
     text-align: center;
     
 }
+
+@media(min-width:767px) {
+       header{
+        padding: 1.5em 3.375em;
+    }
+
+    .article-section{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .heading-container{
+        display: flex;
+        margin-left: 3.312em;
+        margin-bottom: 6.187em;
+        margin-top: 6.937em;
+     
+    }
+
+    .heading-text{
+        margin-left: 2.062em;
+    }
+
+    .hero-text{
+        width: 85%;
+    }
+
+    .article-header, .article-text{
+        width: 80%;
+    }
+
+    .blog-posts{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}
