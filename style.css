@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Source Sans', sans-serif;
+}
+
+/* header, main {
+  max-width: 450px;
+} */
+
+header {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%; 
+    padding:1.125em 1.25em;
+    
+  }
+
+h1 {
+       font-size: 1rem;
+}
+
+.header-image {
+    display: flex;
+}
+
+
+.header-logo {
+    display: inline-block;
+    width:28px;
+   
+}
+
+.bold-text{
+    font-family: Roboto;
+    font-weight: 700;
+    margin-left:0.2em ;
+   
+}
+
+.header-title{
+    display: inline-block;
+    margin-right: 1.25em;
+}
+
+.body-container {
+     display: flex;
+    flex-direction: column;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+     background: url("images/article-image-hero.png");
+    background-size: cover;
+    color: #ffff;
+    min-height: 300px;
+    padding:6.875em 1.125em 1em;
+    flex:1 200px;
+   
+}
+
+.hero-heading{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: -0.2em;
+}
+
+.date{
+    font-size: 0.75rem;
+
+}
+
+.hero-text{
+    margin-top: -1.2em;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.blog-posts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    padding: 2.5em 1.5em;
+}
+
+.blog-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 80%;
+    
+}
+
+.view-more {
+    font-size: 1rem;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.footer{
+    background:black;
+    color:white;
+    padding: 2.5em;
+    width: 100%;
+    text-align: center;
+    
+}
+
+@media(min-width: 767px) {
+    header{
+        padding: 1.5em 3.375em;
+    }
+
+    .hero-section{
+        width: 100%;
+        min-height:500px;
+        padding-left: 3.312em;
+    }
+
+    .hero-text {
+        width:50%;
+    }
+
+    .blog-posts{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .size {
+       width: 373px; 
+    }
+
+    .view-more-container{
+   text-align: center;
+    }
+}
+
+
+
